@@ -2,9 +2,18 @@ import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import { Layout, Typography, Space } from 'antd'
 
-// components 
-import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar } from './components'
+// components
+import {
+  Exchanges,
+  Homepage,
+  News,
+  Cryptocurrencies,
+  CryptoDetails,
+  Navbar
+} from './components'
 
+// styling
+import './App.css'
 
 const App = () => {
   return (
@@ -36,10 +45,13 @@ const App = () => {
         </Layout>
       </div>
       <div className="footer">
-        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
-          <Link to="/">
-            Cryptoverse
-          </Link><br />
+        <Typography.Title
+          level={5}
+          style={{ color: 'white', textAlign: 'center' }}
+        >
+          Copyright © 2021
+          <Link to="/">Cryptoverse</Link>
+          <br />
           All Rights Reserved.
         </Typography.Title>
         <Space>
